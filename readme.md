@@ -91,3 +91,11 @@ docker run --name api-alura -d -p 8000:8000 api-alura
 ```ssh
 docker compose up -d
 ```
+
+## Autenticando no Google Cloud
+
+```sh
+gcloud auth login
+gcloud config set project PROJECT_ID
+gcloud run deploy --port=8000
+```
